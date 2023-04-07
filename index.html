@@ -141,78 +141,65 @@
         </div>
 
         <!--Form-->
-        <div class="row bg-info">
-
+        
+        <form class="row bg-info" onsubmit="submitForm(event)"></form>
             <div class="col">
-                <form>
-                    <label for="exampleInputEmail1" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your first name...">                
-                </form>
+                <label for="exampleInputEmail1" class="form-label">First name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your first name...">                
             </div>
 
             <div class="col">
-                <form>
                     <label for="exampleInputEmail1" class="form-label">Last name</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your last name...">               
-                </form>
             </div>
-        </div>
 
-        <div class="row bg-info">
-
-            <div class="col">
-                <form>
+            <div class="col">                
                     <label for="exampleInputEmail1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@esemplo.com">               
-                </form>
             </div>
 
             <div class="col">
-                <form>
-                    <label for="exampleInputEmail1" class="form-label">Hours requested</label>
-                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hours requested...">               
-                </form>
+                    <label for="hour" class="form-label">Hours requested</label>
+                    <input type="number" class="form-control" id="hour" aria-describedby="emailHelp" placeholder="Hours requested...">               
             </div>
-        </div>
-
-        <div class="row bg-info">
 
             <div class="col">
-                <form>
                     <label for="work" class="form-label">Type of work</label>
                     <select id="work" class="form-select">
                         <option>Back-end</option>
                         <option>Front-end</option>
                         <option>Design Analysis</option>
                     </select>
-                </form>
             </div>
 
             <div class="col">
-                <form>
                     <label for="exampleInputEmail1" class="form-label">Discont code</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">               
-                </form>
             </div>
-        </div>
-
-        <div class="row bg-info">
 
             <div class="col">                
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Specify your work commission..."></textarea>
-                  </div>
+                </div>
             </div>            
-        </div>
 
-        <div class="row bg-info pb-5 text-center">
+            <div class="row bg-info pb-5 text-center">
 
-            <div class="col">
-                <button type="submit" class="btn btn-warning">Send</button>
+                <div class="col">
+                    <button type="submit" class="btn btn-warning">Send</button>
+                </div>
             </div>
+        </form>
+    </div>
+         
+    <div class="row mx-5 px-5">
+        <div class="col my-4">
+
+            <h3 id="totalPrice"></h3>
         </div>
     </div>
+
 
     <!--Footer Container-->
     <div class="container-fluid">

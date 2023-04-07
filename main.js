@@ -21,3 +21,24 @@ function workCalculation (){
     return work
 }
 
+
+function priceCalculation (hour, work){
+
+    price = hour*work;
+    return price.toFixed(2)
+}
+
+
+function submitForm(event){
+    event.preventDefault();
+
+    let work = workCalculation();
+    let hour = document.getElementById("hour").value;
+    let priceInt = priceCalculation(hour, work);
+
+    let finalPrice;
+
+    finalPrice = priceInt;
+
+    document.getElementById("totalPrice").innerHTML = "Il prezzo totale è: " + finalPrice + "€";
+}
